@@ -12,7 +12,7 @@ git 'https://github.com/vinod-kumar082017/devops-test1.git'
 stage('deploy')
    {
        
-echo 'sample deploy'
+echo 'sample pipeline deploy'
    
 }
 
