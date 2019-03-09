@@ -28,7 +28,7 @@ stage("build & SonarQube analysis") {
 stage('deploy')
    {
        
-echo 'sample pipeline deploy'
+bat label: '', script: 'gradle build'
    
 }
 
