@@ -1,5 +1,7 @@
 ---
-- hosts: localhost
+- hosts: webservers
   tasks:
-  - name: copy war
-    COPY: src=/webapp/target/webapp.war dest=/home/admin/tomcat/webapps
+  - name: copy war file
+    COPY:
+      src: /webapp/target/webapp.war
+      dest: /home/admin/tomcat/webapps
