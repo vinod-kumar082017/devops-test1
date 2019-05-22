@@ -3,5 +3,7 @@
   tasks:
   - name: copy war file
     copy:
-      src: webapp/target/webapp.war
+      src: /webapp/target/webapp.war
       dest: /home/admin/tomcat/webapps
+  - name: start tomcat
+    shell: /home/admin/tomcat/bin/startup.sh
